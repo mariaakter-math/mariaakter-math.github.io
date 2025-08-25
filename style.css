@@ -1,76 +1,105 @@
-/* Reset some default browser styles */
-* {
+/* GENERAL STYLING */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  background-color: #f7f9fc;
+  background-color: #f9f9f9;
   color: #333;
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
 }
 
 header {
+  background-color: #00539C; /* deep blue */
+  color: white;
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #005792;
-  margin-bottom: 30px;
+  padding: 2rem 1rem;
 }
 
 header h1 {
-  color: #005792;
+  margin: 0.2rem 0;
   font-size: 2.5rem;
-  margin-bottom: 10px;
 }
 
 header p {
-  font-style: italic;
+  margin: 0;
   font-size: 1.1rem;
-  color: #555;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 nav a {
-  color: #007acc;
-  margin: 0 15px;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #004f7c;
-  text-decoration: underline;
+  color: #FFD700; /* gold highlight */
 }
 
-section {
-  margin-bottom: 40px;
+/* MAIN SECTIONS */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 h2 {
-  color: #004f7c;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
+  color: #00539C;
+  border-bottom: 2px solid #00539C;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
+/* COLLAPSIBLE DETAILS */
+details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
 }
 
+details[open] {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  list-style: none; /* removes default arrow in some browsers */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* hide default arrow */
+}
+
+details[open] summary::before {
+  content: "▼ "; /* arrow pointing down when open */
+}
+
+summary::before {
+  content: "► "; /* arrow pointing right when closed */
+}
+
+details p, details ul {
+  margin: 0.5rem 0 0 1.5rem;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  color: #777;
-  font-size: 0.9rem;
-  border-top: 1px solid #ddd;
-  padding-top: 15px;
+  padding: 1rem 0;
+  background-color: #00539C;
+  color: white;
+  margin-top: 2rem;
 }
+
