@@ -40,6 +40,38 @@ nav a {
 nav a:hover {
   color: #FFD700; /* gold highlight */
 }
+/* Make header a positioning context */
+header {
+  position: relative;
+}
+
+/* Top-right corner photo */
+.profile-photo {
+  position: absolute;
+  top: 16px;          /* distance from top edge */
+  right: 16px;        /* distance from right edge */
+  width: 140px;       /* adjust as you like */
+  height: 140px;      /* keep square for a perfect circle */
+  object-fit: cover;  /* crop nicely */
+  border-radius: 50%; /* circular photo */
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive: shrink on smaller screens */
+@media (max-width: 700px) {
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+    top: 12px;
+    right: 12px;
+  }
+}
+
+/* Optional: if the photo ever overlaps the nav/title, add extra header padding */
+header {
+  padding-bottom: 2.5rem; /* tweak if needed */
+}
 
 /* MAIN SECTIONS */
 main {
@@ -102,4 +134,5 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
 
