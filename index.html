@@ -5,120 +5,265 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maria Akter - Academic Profile</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* --- CSS Snippet --- */
+    body {
+      font-family: 'Helvetica', 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #00539C;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0.2rem 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: #00539C;
+      border-bottom: 2px solid #00539C;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    details {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    details[open] {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary::before {
+      content: "▼ ";
+    }
+
+    summary::before {
+      content: "► ";
+    }
+
+    details p, details ul {
+      margin: 0.5rem 0 0 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #00539C;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Maria Akter</h1>
     <p>PhD Student in Mathematics | University of Alabama</p>
     <nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#teaching">Teaching</a>
-  <a href="#CV">Curriculum Vitae</a>
-  <a href="#contact">Contact</a>
-</nav>
-
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#CV">Curriculum Vitae</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-  <section id="about">
-    <h2>About Me</h2>
-    <details>
-      <summary>Click to view About Me</summary>
-      <p>I am Maria Akter, a Ph.D. student in the Department of Mathematics at the University of Alabama, Tuscaloosa. My research focuses on commutative algebra in positive characteristic, with a particular interest in F-singularities. I am working under the supervision of Thomas Polstra. I earned both my B.A. and M.S. in Mathematics from the University of Dhaka, Bangladesh.</p>
-    </details>
-  </section>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <details>
+        <summary>Maria Akter</summary>
+        <p>I am a Ph.D. student in the Department of Mathematics at the University of Alabama, Tuscaloosa. My research focuses on commutative algebra in positive characteristic, with a particular interest in F-singularities. I work under the supervision of Thomas Polstra. I earned both my B.A. and M.S. in Mathematics from the University of Dhaka, Bangladesh.</p>
+      </details>
+    </section>
 
-  <section id="research">
-    <h2>Research Interests</h2>
-    <details>
-      <summary>Click to view Research Interests</summary>
-      <ul>
-        <li>Commutative Algebra</li>
-        <li>Algebraic Geometry</li>
-      </ul>
-    </details>
-  </section>
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <details>
+        <summary>Research Areas</summary>
+        <ul>
+          <li>Commutative Algebra</li>
+          <li>Algebraic Geometry</li>
+        </ul>
+      </details>
+    </section>
 
-  <section id="publications">
-    <h2>Publications & Preprints</h2>
-    <details>
-      <summary>Click to view Publications & Preprints</summary>
-      <ul>
-        <li>
-          Maria Akter: <em>On m-adic Continuity of F-Splitting Ratio</em>, 
-          arXiv preprint <a href="https://arxiv.org/abs/2505.12174" target="_blank">arXiv:2505.12174</a>, submitted (2025).
-        </li>
-        <li>
-          S. M. Atiqur Rahman Chowdhury, Ashish Barmon, Sharmin Alam, Maria Akter: 
-          <em>Numerical Simulation that Provides Non-oscillatory Solutions for Porous Medium Equation and Error Approximation of Boussinesq’s Equation</em>, 
-          Universal Journal of Computational Mathematics, 5(2), 25-33, 2017. 
-          DOI: <a href="https://doi.org/10.13189/ujcmj.2017.050203" target="_blank">10.13189/ujcmj.2017.050203</a>.
-        </li>
-        <li>
-          Maria Akter, Salma Nasrin: 
-          <em>Invariant Differential Operator on Homogeneous Space</em>, 
-          International Journal of Mathematics and Computational Science, Vol. 3, No. 1, pp. 1-5, 2017.
-        </li>
-        <li>
-          Maria Akter, Salma Nasrin: 
-          <em>Symmetric Pair from Symmetric Space and Lie Group</em>, 
-          Journal of Engineering Mathematics & Statistics, 2018.
-        </li>
-      </ul>
-    </details>
-  </section>
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications & Preprints</h2>
+      <details>
+        <summary>Click to view Publications & Preprints</summary>
+        <ul>
+          <li>
+            Maria Akter: <em>On m-adic Continuity of F-Splitting Ratio</em>, 
+            arXiv preprint <a href="https://arxiv.org/abs/2505.12174" target="_blank">arXiv:2505.12174</a>, submitted (2025).
+          </li>
+          <li>
+            S. M. Atiqur Rahman Chowdhury, Ashish Barmon, Sharmin Alam, Maria Akter: 
+            <em>Numerical Simulation that Provides Non-oscillatory Solutions for Porous Medium Equation and Error Approximation of Boussinesq’s Equation</em>, 
+            Universal Journal of Computational Mathematics, 5(2), 25-33, 2017. 
+            DOI: <a href="https://doi.org/10.13189/ujcmj.2017.050203" target="_blank">10.13189/ujcmj.2017.050203</a>.
+          </li>
+          <li>
+            Maria Akter, Salma Nasrin: <em>Invariant Differential Operator on Homogeneous Space</em>, International Journal of Mathematics and Computational Science, Vol. 3, No. 1, pp. 1-5, 2017.
+          </li>
+          <li>
+            Maria Akter, Salma Nasrin: <em>Symmetric Pair from Symmetric Space and Lie Group</em>, Journal of Engineering Mathematics & Statistics, 2018.
+          </li>
+        </ul>
+      </details>
+    </section>
 
-  <section id="talks">
-    <h2>Selected Talks and Presentations</h2>
-    <details>
-      <summary>Click to view Talks and Presentations</summary>
-      
-      <h3>Posters</h3>
-      <ul>
-        <li><em>On m-adic Continuity of F-Splitting Ratio</em>, CATS Conference, Georgia State University, USA, April 2025.</li>
-        <li><em>On m-adic Continuity of F-Splitting Ratio</em>, WICA Conference, Fields Institute, Toronto, Canada, March 2025.</li>
-        <li><em>On Inversion of Adjunction of Splitting Dimensions</em>, SLAM Conference, University of Oklahoma, USA, February 2024.</li>
-      </ul>
+    <!-- TALKS -->
+    <section id="talks">
+      <h2>Selected Talks and Presentations</h2>
+      <details>
+        <summary>Click to view Talks and Presentations</summary>
+        <h3>Posters</h3>
+        <ul>
+          <li><em>On m-adic Continuity of F-Splitting Ratio</em>, CATS Conference, Georgia State University, USA, April 2025.</li>
+          <li><em>On m-adic Continuity of F-Splitting Ratio</em>, WICA Conference, Fields Institute, Toronto, Canada, March 2025.</li>
+          <li><em>On Inversion of Adjunction of Splitting Dimensions</em>, SLAM Conference, University of Oklahoma, USA, February 2024.</li>
+        </ul>
+        <h3>Small Talks</h3>
+        <ul>
+          <li><em>On m-adic Continuity of F-Splitting Ratio</em>, CATS Conference, Georgia State University, USA, April 2025.</li>
+          <li><em>On m-adic Continuity of F-Splitting Ratio</em>, WICA Conference, Fields Institute, Toronto, Canada, March 2025.</li>
+          <li><em>Frobenius Action on Local Cohomology</em>, GEMS Conference, University of Minnesota, MN, USA, November 2023.</li>
+        </ul>
+      </details>
+    </section>
 
-      <h3>Small Talks</h3>
-      <ul>
-        <li><em>On m-adic Continuity of F-Splitting Ratio</em>, CATS Conference, Georgia State University, USA, April 2025.</li>
-        <li><em>On m-adic Continuity of F-Splitting Ratio</em>, WICA Conference, Fields Institute, Toronto, Canada, March 2025.</li>
-        <li><em>Frobenius Action on Local Cohomology</em>, GEMS Conference, University of Minnesota, MN, USA, November 2023.</li>
-      </ul>
-    </details>
-  </section>
+    <!-- TEACHING -->
+    <section id="teaching">
+      <h2>Teaching Experience</h2>
+      <details>
+        <summary>Click to view Teaching Experience</summary>
 
-  <section id="teaching">
-    <h2>Teaching Experience</h2>
-    <details>
-      <summary>Click to view Teaching Experience</summary>
-      <!-- Paste your full teaching experience HTML here (University of Alabama, BUET, BRAC, etc.) -->
-    </details>
-  </section>
+        <h3>University of Alabama</h3>
+        <ul>
+          <li><em>Math 110 – Finite Mathematics</em>, Summer 2025.</li>
+          <li><em>Math 237 – Linear Algebra</em>, Spring 2025.</li>
+          <li><em>Math 572 – Linear Algebra (Grader and Assistant Instructor)</em>, Fall 2024.</li>
+          <li><em>Math 238 – Applied Differential Equations I</em>, Spring 2024.</li>
+          <li><em>Math 126 – Calculus II</em>, Fall 2023.</li>
+          <li><em>Math 125 – Calculus I</em>, Spring 2022.</li>
+          <li><em>Math 115 – Precalculus and Trigonometry</em>, Fall 2022.</li>
+        </ul>
 
-  <section id="CV">
-    <h2>Curriculum Vitae</h2>
-    <details>
-      <summary>Click to view/download CV</summary>
-      <p><a href="MariaAkter_CV.pdf" target="_blank">Download PDF</a></p>
-    </details>
-  </section>
+        <h3>BUET</h3>
+        <h4>January 2015</h4>
+        <ul>
+          <li><em>Math 111 – Mathematics I</em></li>
+          <li><em>Math 141 – Calculus I</em></li>
+          <li><em>Math 243 – Advanced Calculus</em></li>
+          <li><em>Math 235 – Vector Analysis and Statistics</em></li>
+          <li><em>Math 263 – Complex Variables, Harmonic Analysis and PDE</em></li>
+          <li><em>Math 133 – Matrices and Coordinate Geometry</em></li>
+        </ul>
+        <!-- Add remaining BUET semesters similarly -->
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <details>
-      <summary>Click to view Contact Information</summary>
-      <p>Email: <a href="mailto:makter2@crimson.ua.edu">makter2@crimson.ua.edu</a></p>
-      <p>GitHub: <a href="https://github.com/mariaakter-math" target="_blank">github.com/mariaakter-math</a></p>
-      <p>Office: Gordon Palmer Hall, Room 217A</p>
-    </details>
-  </section>
-</main>
+        <h3>BRAC University</h3>
+        <ul>
+          <li><em>Math 123 – Calculus I</em>, Summer & Fall 2014</li>
+          <li><em>Math 121 – Basic Algebra</em>, Summer & Fall 2014</li>
+          <li><em>Math 211 – Calculus II</em>, Summer & Fall 2014</li>
+        </ul>
 
+        <h3>United International University</h3>
+        <ul>
+          <li><em>Math 134 – Calculus I</em>, Summer 2013</li>
+          <li><em>Math 121 – Basic Algebra</em>, Summer 2013</li>
+        </ul>
 
+        <h3>Sonargaon University</h3>
+        <ul>
+          <li><em>Math 167 – Integral Calculus I</em>, Fall 2016 & Spring 2017</li>
+          <li><em>Math 144 – Matrices</em>, Fall 2017</li>
+        </ul>
+      </details>
+    </section>
 
+    <!-- CV -->
+    <section id="CV">
+      <h2>Curriculum Vitae</h2>
+      <details>
+        <summary>Click to view/download CV</summary>
+        <p><a href="MariaAkter_CV.pdf" target="_blank">Download PDF</a></p>
+      </details>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <details>
+        <summary>Click to view Contact Information</summary>
+        <p>Email: <a href="mailto:makter2@crimson.ua.edu">makter2@crimson.ua.edu</a></p>
+        <p>GitHub: <a href="https://github.com/mariaakter-math" target="_blank">github.com/mariaakter-math</a></p>
+        <p>Office: Gordon Palmer Hall, Room 217A</p>
+      </details>
+    </section>
 
+  </main>
 
+  <footer>
+    <p>© 2025 Maria Akter</p>
+  </footer>
+</body>
+</html>
